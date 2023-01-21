@@ -1,0 +1,8 @@
+http://178.248.252.60/~vujovic/adventK/ -O "/Users/martin/websites/Angie" -%v
+File generated automatically on Sat, 21 Jan 2023 09:23:05, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+

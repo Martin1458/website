@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from 178.248.252.60/~vujovic/adventK/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Jan 2023 08:23:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="resources/snow.js"></script>
+    <script src="main.js"></script>
+    <title>Adventní kalenář</title>
+</head>
+<body>
+    <div id="snow"></div>
+    <div id="cinemaContainer" onclick="exitCinemaMode()" hidden="">
+        <div class="cinemaBox">
+            <img src="#" onclick="disableClick(event)" alt="">
+        </div>
+        <div  class="cinemaClose">X</div>
+    </div>
+    <div id="calendarContainer">
+        <div id="1">1</div>
+        <div id="2">2</div>
+        <div id="3">3</div>
+        <div id="4">4</div>
+        <div id="5">5</div>
+        <div id="6">6</div>
+        <div id="7">7</div>
+        <div id="8">8</div>
+        <div id="9">9</div>
+        <div id="10">10</div>
+        <div id="11">11</div>
+        <div id="12">12</div>
+        <div id="13">13</div>
+        <div id="14">14</div>
+        <div id="15">15</div>
+        <div id="16">16</div>
+        <div id="17">17</div>
+        <div id="18">18</div>
+        <div id="19">19</div>
+        <div id="20">20</div>
+        <div id="21">21</div>
+        <div id="22">22</div>
+        <div id="23">23</div>
+        <div id="24">24</div>
+    </div>
+    <script>
+		var calendar = document.getElementById("calendarContainer");
+		window.onload = function(){
+			shuffleChildren(calendar);
+		};
+    </script>
+</body>
+
+<!-- Mirrored from 178.248.252.60/~vujovic/adventK/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Jan 2023 08:23:11 GMT -->
+</html>

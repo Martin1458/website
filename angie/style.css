@@ -1,0 +1,163 @@
+body {
+	margin: 0 auto;
+    background-color: #ECECEE;
+	font-family: sans-serif;
+	overflow: hidden;
+}
+
+#calendarContainer {
+	border-radius: 2rem;
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+	width: 1200px;
+	height: 900px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+	padding:20px;
+    transform: translate(-50%, -50%);
+
+	/*
+	background: url(resources/images/xmassTree.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	*/
+}
+
+#calendarContainer .calWindow{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 4rem;
+	opacity: 80%;
+	border: 1px solid;
+	border-radius: .5rem;
+	cursor: pointer;
+}
+
+#snow {
+	width:100%;
+    height:100%;
+	position:fixed;
+	background-color: red;
+
+	/*
+	background: url(resources/images/xmassTree.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	*/
+}
+
+#cinemaContainer {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background: rgba(17, 17, 17, 0.85);
+	z-index: 999;
+	text-align: center;
+}
+
+
+#cinemaContainer .cinemaBox {
+	height: 100%;
+	max-width: 1600;
+	max-height: 1200;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#cinemaContainer .cinemaBox img,video {
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	border-radius: .5rem;
+	-moz-transition:all .4s ease;
+	-o-transition:all .4s ease;
+	-webkit-transition:all .4s ease;
+	transition:all .4s ease;
+
+		
+	/*	
+	Candy-like border pro náruživé:
+	border: 1rem solid;
+	border-image: repeating-linear-gradient(45deg, white, white 30px, red, #f33 60px) 60;
+	*/
+}
+
+#cinemaContainer .cinemaClose {
+	right: 10px;
+	top: 10px;
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	vertical-align: middle;
+	cursor: pointer;
+	font-size: 25px;
+	box-sizing: border-box;
+	position: fixed;
+	bottom: 10px;
+	border-radius: .5rem;
+	border: 1px solid transparent;
+	-moz-transition:all .4s ease;
+	-o-transition:all .4s ease;
+	-webkit-transition:all .4s ease;
+	transition:all .4s ease;
+}
+
+#cinemaContainer .cinemaClose:hover {
+	border: 1px solid #fff;
+	background-color: black;
+}
+
+/*	
+
+@font-face {
+	font-family: vt323;
+	src: url(resources/fonts/vt323/vt323-regular.ttf) format("truetype");
+}
+
+@media screen and (max-width: 1200px) {
+	#calendarContainer { 
+		width: 600px;
+		height: 450px;
+		grid-template-columns: repeat(3, 1fr) 
+	}
+}
+
+@media screen and (max-height: 900px) {
+	#calendarContainer { 
+		width: 600px;
+		height: 450px;
+		grid-template-columns: repeat(3, 1fr) 
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#calendarContainer { 
+		width: 400px;
+		height: 300px;
+		grid-template-columns: repeat(3, 1fr) 
+	}
+}
+
+@media screen and (max-height: 400px) {
+	#calendarContainer { 
+		width: 360px;
+		height: 240px;
+		grid-template-columns: repeat(3, 1fr) 
+	}
+}
+
+*/
+
